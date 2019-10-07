@@ -14,6 +14,13 @@ public class Sample {
     public static int songuyen = 7;
 
     public static void main(String[] args) {
+        String s = "thien";
+        char[] AD = s.toCharArray(); // 0123456
+        for (int i = 0; i < AD.length; i++) {
+            System.out.println(AD[i]+";");
+        }
+        
+
         int songuyen = 6;
         System.out.println("local: " + songuyen);
         System.out.println("global: " + Sample.songuyen);
@@ -68,6 +75,6 @@ public class Sample {
 //        } else {
 //            return false;
 //        }
-           return X%2==0;
+        return X % 2 == 0;
     }
 }
