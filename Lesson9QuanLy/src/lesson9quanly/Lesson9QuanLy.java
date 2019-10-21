@@ -45,7 +45,7 @@ public class Lesson9QuanLy {
             }
         }
     }
-
+    
     static void CREATE() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap vao MSSV moi: ");
@@ -61,7 +61,7 @@ public class Lesson9QuanLy {
 
     }
 
-    static void READ() { // show up data
+    static void READ() { // show up data || show 1 sinh vien
         for (int i = 0; i < DSSV.size(); i++) {
             SinhVien SVdangxet = DSSV.get(i); // setter getter
             System.out.println("SO THU TU: " + i);
@@ -74,7 +74,9 @@ public class Lesson9QuanLy {
     }
 
     static void UPDATE() {
-        UPDATE_CPA();
+        UPDATE_CPA(); // 
+        // UPDATE_MSSV
+        // UPDATE_HOTEN
     }
 
     static void UPDATE_CPA() {
