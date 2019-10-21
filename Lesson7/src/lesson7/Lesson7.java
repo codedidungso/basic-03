@@ -105,21 +105,27 @@ public class Lesson7 {
     public static void move(String direction) {
         switch (direction.toUpperCase()) {
             case "UP":
-                y = (y - 1 + n) % n;
+                // y = (y - 1 + n) % n;
+                y = y-1;
                 break;
             case "DOWN":
-                y = (y + 1) % n;
+                // y = (y + 1) % n;
                 break;
             case "LEFT":
-                x = (x - 1 + n) % n;
+                // x = (x - 1 + n) % n;
                 break;
             case "RIGHT":
-                x = (x + 1) % n;
+                // x = (x + 1) % n;
                 break;
             case "EXIT":
                 System.out.println("DUNG CHUONG TRINH");
                 System.exit(0);
         }
+
+        if(x>=n) x = 0;
+        if(x<0) x = n-1;
+        if(y>=n) y = 0;
+        if(y<0) y = n-1;
     }
 
 }
